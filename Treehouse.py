@@ -679,6 +679,3 @@
 
 class Warrior:
     melee = True
-
-=======
->>>>>>> d29e729967e0379d6a69eb63703d42a83eb6ae5a
