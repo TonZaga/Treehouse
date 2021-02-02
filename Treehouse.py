@@ -287,8 +287,6 @@
 #     print("{} is neither a fizzy or a buzzy number".format(number))
 
 
-<<<<<<< HEAD
-
 #-----------------------------------------------------------------------#
 # Practice Comparsions in python #
 #-----------------------------------------------------------------------#
@@ -324,15 +322,10 @@
 # if turn_100 > current_year:
 #     print("{}, you'll turn 100 in the year {}!".format(name, turn_100))
 
-
-
-=======
->>>>>>> d29e729967e0379d6a69eb63703d42a83eb6ae5a
 #-----------------------------------------------------------------------#
 # Practice Using Strings and Lists in python #
 #-----------------------------------------------------------------------#
 
-<<<<<<< HEAD
 # # Step 1:
 # # Make two strings, each should be 8 characters long, made up of Xs and Os.
 # # First string should start with X, second string should start with O.
@@ -676,6 +669,21 @@
 #-----------------------------------------------------------------------#
 
 # class is int, str, list
+import random
 
 class Warrior:
     melee = True
+
+    def __init__(self, name, melee=True, **kwargs):
+        self.name = name
+        self.melee = melee
+
+        for key, value in kwargs.items():
+            setattr(self, key, value)
+
+    def Slam(self):
+        return self.melee and bool(random.randint(0, 1))
+
+    def hide(self, light_level):
+        return self.Slam and light_level < 10
+        
