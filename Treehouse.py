@@ -287,6 +287,7 @@
 #     print("{} is neither a fizzy or a buzzy number".format(number))
 
 
+<<<<<<< HEAD
 
 #-----------------------------------------------------------------------#
 # Practice Comparsions in python #
@@ -325,10 +326,13 @@
 
 
 
+=======
+>>>>>>> d29e729967e0379d6a69eb63703d42a83eb6ae5a
 #-----------------------------------------------------------------------#
 # Practice Using Strings and Lists in python #
 #-----------------------------------------------------------------------#
 
+<<<<<<< HEAD
 # # Step 1:
 # # Make two strings, each should be 8 characters long, made up of Xs and Os.
 # # First string should start with X, second string should start with O.
@@ -676,3 +680,5 @@
 class Warrior:
     melee = True
 
+=======
+>>>>>>> d29e729967e0379d6a69eb63703d42a83eb6ae5a
