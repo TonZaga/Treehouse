@@ -671,16 +671,20 @@
 # class is int, str, list
 import random
 
-class Warrior:
-    melee = True
-
-    def __init__(self, name, melee=True, **kwargs):
+class Character:
+    def __init__(self, name, **kwargs):
         self.name = name
-        self.melee = melee
 
         for key, value in kwargs.items():
             setattr(self, key, value)
 
+class Warrior(Character):
+    melee = True
+
+    def __init__(self, name, melee=True, **kwargs):
+        super().__init__(name, **kwargs)
+        self.melee = melee
+    
     def Slam(self):
         return self.melee and bool(random.randint(0, 1))
 
