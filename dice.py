@@ -42,3 +42,4 @@ class Die:
 class D6(Die):
     def __init__(self, value=0):
         super().__init__(sides=6, value=value)
+            D6.append(self.value)
